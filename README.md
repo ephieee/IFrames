@@ -15,3 +15,21 @@ The width attribute specifies the width of the iframe in pixels.
  height="350" 
  src="http://maps.google.co.uk/maps?q=moma+new+york &amp;output=embed">
 </iframe>
+
+
+
+scrolling
+The scrolling attribute will not be supported in HTML5. In HTML 4 and XHTML, it indicates whether the iframe should have scrollbars or not. This is important if the page inside the iframe is larger than the space you have allowed for it (using the height and width attributes). Scrollbars allow the user to move around the frame to see more 
+content. It can take one of three values: yes (to show scrollbars), no (to hide scrollbars) and auto (to show them only if needed).
+frameborder
+The frameborder attribute will not be supported in HTML5. In HTML 4 and XHTML, it indicates whether the frame should have a border or not. A value of 0indicates that no border should be shown. A value of 1 indicates that a border should be shown.
+seamless
+In HTML5, a new attribute called seamless can be applied to an iframe where scrollbars are not desired. The seamlessattribute (like some other new HTML5 attributes) does not need a value, but you will often see authors give it a value of seamless. Older browsers do not support the seamless attribute.
+
+<iframe 
+ src="http://maps.google.co.uk/maps?q=moma+new+york &amp;output=embed"
+ width="450" 
+ height="350" 
+ frameborder="0" 
+ scrolling="no">
+</iframe>
